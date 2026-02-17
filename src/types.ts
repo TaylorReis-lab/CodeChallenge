@@ -1,6 +1,5 @@
-
-export type Difficulty = 'Iniciante' | 'Intermediário' | 'Avançado';
-export type ProgrammingLanguage = 'JavaScript' | 'C#' | 'Python';
+export type Difficulty = "Iniciante" | "Intermediário" | "Avançado";
+export type ProgrammingLanguage = "JavaScript" | "C#" | "Python";
 
 export interface TestCase {
   input: any[];
@@ -38,7 +37,7 @@ export interface UserStats {
   avatar: string;
 }
 
-export type ThemeType = 'light' | 'dark' | 'random';
+export type ThemeType = "light" | "dark" | "random";
 
 export interface ThemeConfig {
   id: string;

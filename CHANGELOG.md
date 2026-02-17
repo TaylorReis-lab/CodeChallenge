@@ -7,13 +7,14 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ---
 
-## [1.0.0] - 2024
+## [1.0.0] - 2025
 
 ### Adicionado
+
 - ✨ Plataforma inicial do CodeChallenge Hub
 - 🎯 40 desafios de JavaScript organizados em 3 níveis
   - 10 desafios Iniciante
-  - 15 desafios Intermediário  
+  - 15 desafios Intermediário
   - 15 desafios Avançado
 - 🏅 Sistema de 12 medalhas
   - Medalhas por quantidade de desafios concluídos
@@ -33,6 +34,7 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 - 👨‍💻 Créditos ao autor Taylor Reis
 
 ### Tecnologias
+
 - React 18
 - TypeScript
 - Vite
@@ -43,6 +45,7 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## [Próximas Versões]
 
 ### Planejado
+
 - 🔜 Desafios de C#
 - 🔜 Desafios de Python
 - 🔜 Desafios de Java
@@ -60,11 +63,13 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## Versões Futuras
 
 ### [1.1.0] - Em Planejamento
+
 - [ ] Adição de desafios C#
 - [ ] Melhorias no sistema de medalhas
 - [ ] Novas funcionalidades de compartilhamento
 
 ### [1.2.0] - Em Planejamento
+
 - [ ] Adição de desafios Python
 - [ ] Sistema de conquistas
 - [ ] Melhorias na interface

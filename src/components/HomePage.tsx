@@ -25,19 +25,20 @@ export function HomePage({
           <span>🚀</span>
           <span>Projeto Open Source</span>
         </div>
-        
+
         <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
           Domine JavaScript com{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500">
             Desafios Práticos
           </span>
         </h1>
-        
+
         <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-          Uma plataforma criada para você <strong>relembrar e praticar</strong> funções e métodos do JavaScript, 
-          desde o básico até conceitos avançados. Aprenda fazendo!
+          Uma plataforma criada para você <strong>relembrar e praticar</strong>{' '}
+          funções e métodos do JavaScript, desde o básico até conceitos
+          avançados. Aprenda fazendo!
         </p>
-        
+
         <div className="flex justify-center gap-4">
           <Button
             variant="primary"
@@ -84,27 +85,36 @@ export function HomePage({
           <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span className="text-3xl">📚</span>
           </div>
-          <h3 className="text-lg font-semibold text-slate-800 mb-2">Documentação Detalhada</h3>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">
+            Documentação Detalhada
+          </h3>
           <p className="text-slate-600 text-sm">
-            Cada desafio vem com explicações completas, exemplos de sintaxe e dicas práticas.
+            Cada desafio vem com explicações completas, exemplos de sintaxe e
+            dicas práticas.
           </p>
         </div>
         <div className="text-center">
           <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span className="text-3xl">🏆</span>
           </div>
-          <h3 className="text-lg font-semibold text-slate-800 mb-2">Sistema de Medalhas</h3>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">
+            Sistema de Medalhas
+          </h3>
           <p className="text-slate-600 text-sm">
-            Ganhe medalhas conforme avança, desde "Juninho Dev" até "Lenda do JavaScript".
+            Ganhe medalhas conforme avança, desde "Juninho Dev" até "Lenda do
+            JavaScript".
           </p>
         </div>
         <div className="text-center">
           <div className="w-16 h-16 bg-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <span className="text-3xl">✅</span>
           </div>
-          <h3 className="text-lg font-semibold text-slate-800 mb-2">Testes Automáticos</h3>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">
+            Testes Automáticos
+          </h3>
           <p className="text-slate-600 text-sm">
-            Valide suas soluções instantaneamente com testes que verificam seu código.
+            Valide suas soluções instantaneamente com testes que verificam seu
+            código.
           </p>
         </div>
       </div>
@@ -112,7 +122,9 @@ export function HomePage({
       {/* Progress */}
       {completedChallenges > 0 && (
         <Card className="max-w-2xl mx-auto p-6">
-          <h3 className="text-lg font-semibold text-slate-800 mb-4">Seu Progresso</h3>
+          <h3 className="text-lg font-semibold text-slate-800 mb-4">
+            Seu Progresso
+          </h3>
           <div className="space-y-3">
             <div>
               <div className="flex justify-between text-sm text-slate-600 mb-1">
@@ -120,9 +132,11 @@ export function HomePage({
                 <span>{challengesByLevel.iniciante}/10</span>
               </div>
               <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                <div 
+                <div
                   className="h-full bg-emerald-500 rounded-full transition-all duration-500"
-                  style={{ width: `${(challengesByLevel.iniciante / 10) * 100}%` }}
+                  style={{
+                    width: `${(challengesByLevel.iniciante / 10) * 100}%`,
+                  }}
                 />
               </div>
             </div>
@@ -132,9 +146,11 @@ export function HomePage({
                 <span>{challengesByLevel.intermediario}/15</span>
               </div>
               <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                <div 
+                <div
                   className="h-full bg-amber-500 rounded-full transition-all duration-500"
-                  style={{ width: `${(challengesByLevel.intermediario / 15) * 100}%` }}
+                  style={{
+                    width: `${(challengesByLevel.intermediario / 15) * 100}%`,
+                  }}
                 />
               </div>
             </div>
@@ -144,9 +160,11 @@ export function HomePage({
                 <span>{challengesByLevel.avancado}/15</span>
               </div>
               <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
-                <div 
+                <div
                   className="h-full bg-rose-500 rounded-full transition-all duration-500"
-                  style={{ width: `${(challengesByLevel.avancado / 15) * 100}%` }}
+                  style={{
+                    width: `${(challengesByLevel.avancado / 15) * 100}%`,
+                  }}
                 />
               </div>
             </div>
@@ -156,7 +174,9 @@ export function HomePage({
 
       {/* CTA */}
       <Card className="p-8 text-center bg-gradient-to-r from-slate-800 to-slate-900 text-white">
-        <h3 className="text-2xl font-bold mb-4">"Tudo pode começar e continuar crescendo"</h3>
+        <h3 className="text-2xl font-bold mb-4">
+          "Tudo pode começar e continuar crescendo"
+        </h3>
         <p className="text-slate-300 mb-6">
           Comece agora e conquiste todas as medalhas! 🏅
         </p>

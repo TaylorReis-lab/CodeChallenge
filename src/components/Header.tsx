@@ -33,7 +33,7 @@ export function Header({ onMenuClick, onThemeChange, currentTheme, userName }: H
                 <span className="text-lg">💻</span>
               </div>
               <div>
-                <h1 className="font-bold text-slate-800 text-sm">JS Challenges</h1>
+                <h1 className="font-bold text-slate-800 text-sm">CodeChallenges</h1>
               </div>
             </div>
           </div>
