@@ -1,16 +1,17 @@
-# 🚀 CodeChallenge Hub
+# 🚀 CodeChallenger
 
-> **"Tudo pode começar e continuar crescendo"**
+> **"Tudo pode começar e continuar crescendo"** 🌱
 
 ---
 
 ## 📖 Sobre o Projeto
 
-O **CodeChallenge Hub** é uma plataforma interativa de aprendizado e prática de programação através de desafios. O projeto foi criado com o objetivo de ajudar desenvolvedores a relembrar conceitos, praticar lógica de programação e evoluir constantemente.
+O **CodeChallenger** é uma plataforma interativa de aprendizado e prática de programação através de desafios. O projeto foi criado com o objetivo de ajudar desenvolvedores a relembrar conceitos, praticar lógica de programação e evoluir constantemente.
 
 ### 🎯 Objetivo
 
 A ideia surgiu da necessidade de ter um local centralizado onde desenvolvedores de todos os níveis possam:
+
 - **Relembrar** como funcionam determinadas funções e métodos
 - **Praticar** a utilização correta desses conceitos
 - **Desenvolver** raciocínio lógico através de desafios progressivos
@@ -18,104 +19,250 @@ A ideia surgiu da necessidade de ter um local centralizado onde desenvolvedores 
 
 ---
 
+## 🏗️ Arquitetura Profissional
+
+```
+src/
+├── core/
+│   └── types.ts           # Tipos TypeScript globais e interfaces
+├── sections/
+│   ├── RenderHome.tsx     # Página inicial com Navbar
+│   ├── RenderProfile.tsx  # Perfil e integração GitHub
+│   ├── RenderDeliveries.tsx # Histórico de entregas
+│   ├── RenderRanking.tsx  # Ranking da comunidade
+│   └── RenderCommunity.tsx # Comunidade (Coming Soon)
+├── logic/
+│   └── useGitHub.ts      # Hook para API do GitHub
+├── context/
+│   └── AppStateContext.tsx # Estado global da aplicação
+├── features/
+│   ├── ProfileMenu.tsx   # Menu de perfil com submenus
+│   └── CodeEditor.tsx    # Editor de código com terminal
+├── data/
+│   ├── index.ts          # Registro de linguagens
+│   ├── javascript.ts     # Desafios JavaScript
+│   └── csharp.ts         # Desafios C# (futuro)
+├── theme/
+│   ├── themes.ts         # Configurações de temas
+│   └── ThemeContext.tsx  # Contexto de tema
+├── ui/
+│   └── components/       # Componentes reutilizáveis
+│       ├── Button.tsx
+│       ├── Card.tsx
+│       ├── Modal.tsx
+│       ├── Badge.tsx
+│       ├── Progress.tsx
+│       └── Tooltip.tsx
+├── App.tsx               # Entry point principal com navegação
+└── main.tsx              # Bootstrap React
+```
+
+---
+
 ## ✨ Funcionalidades Principais
 
-### 📋 Desafios Organizados por Nível
-- **Iniciante**: Para quem está começando ou quer revisar conceitos básicos
-- **Intermediário**: Desafios que exigem mais raciocínio e conhecimento
-- **Avançado**: Problemas complexos para desenvolvedores experientes
+### 🧭 Navegação Profissional
 
-### 🏅 Sistema de Medalhas
-- Ganhe medalhas ao completar desafios
-- Progressão motivadora através dos níveis
-- Medalhas especiais para marcos importantes
+- **Navbar na Home**: Barra de navegação completa com links para todas as seções
+- **Menu de Perfil**: Foto que abre menu com opções organizadas
+- **Submenus**: Temas e idiomas em submenus para economizar espaço
+- **Histórico de Voltar**: Sistema de navegação que retorna para a tela anterior
 
-### 🧪 Testes Automatizados
-- Cada desafio possui casos de teste pré-definidos
-- Feedback instantâneo sobre sua solução
-- Aprenda com os erros e melhore continuamente
+### 🎨 Sistema de Temas Completo
 
-### 📚 Documentação Detalhada
-- Explicação completa dos conceitos
-- Sintaxe e exemplos de código
-- Dicas e métodos relacionados
-- Exemplos práticos
+- **Tema Claro**: Interface limpa em branco
+- **Tema Escuro**: Dracula OLED (padrão VSCode)
+- **Tema Aleatório**: Cores curadas que mudam a cada refresh
+- **Terminal Colorido**: Cores de sintaxe como no VSCode
 
-### 💾 Progresso Salvo
-- Seus desafios concluídos são armazenados no navegador
-- Continue de onde parou a qualquer momento
+### 👤 Integração GitHub
+
+- Conecte seu usuário do GitHub
+- Foto e dados puxados automaticamente da API
+- Exibição de estatísticas (repos, seguidores)
+
+### 📦 Sistema de Entregas
+
+- Histórico completo de submissões
+- Status: Aprovado, Pendente, Rejeitado
+- Tempo de execução
+- Filtros e busca
+
+### 🏆 Ranking
+
+- Os melhores desenvolvedores da comunidade
+- Podium para os top 3
+- Comparação com seu progresso
+
+### 👥 Comunidade
+
+- Feed de posts da comunidade
+- Funcionalidades em desenvolvimento (Coming Soon)
+
+### 🌐 Multi-Linguagens
+
+- JavaScript (pronto)
+- C# (pronto)
+- Python, Java, Go, Rust (em breve)
+- Seleção na home
+- Desafios específicos por linguagem
+
+### 📚 Documentação de Desafios
+
+Para cada desafio:
+
+- Conceito completo
+- Sintaxe
+- Exemplo prático
+- Dicas
+- Link para documentação oficial
 
 ---
 
-## 🏅 Medalhas Disponíveis
+## 🏅 Sistema de Medalhas
 
-| Nível | Medalha | Descrição |
-|-------|---------|-----------|
-| 🐣 | Primeiros Passos | Complete seu primeiro desafio |
-| 🔥 | Aquecendo os Motores | Complete 5 desafios do nível Iniciante |
-| 🎓 | Mestre Iniciante | Complete todos os desafios do nível Iniciante |
-| 🌱 | Juninho Dev | Complete seu primeiro desafio Intermediário |
-| ⚔️ | Guerreiro do Código | Complete 5 desafios do nível Intermediário |
-| 🧩 | Solucionador de Problemas | Complete 10 desafios do nível Intermediário |
-| 🏆 | Mestre Intermediário | Complete todos os desafios do nível Intermediário |
-| 🦁 | Programador Corajoso | Complete seu primeiro desafio Avançado |
-| 🥷 | Ninja dos Algoritmos | Complete 5 desafios do nível Avançado |
-| 👨‍🏫 | Sensei do Código | Complete 10 desafios do nível Avançado |
-| 👑 | Mestre Avançado | Complete todos os desafios do nível Avançado |
-| 🌟 | Lenda do JavaScript | Conquiste TODOS os desafios! |
+| Medalha                 | Descrição                         | Requisito         |
+| ----------------------- | --------------------------------- | ----------------- |
+| 🐣 Primeiros Passos     | Complete seu primeiro desafio     | 1 desafio         |
+| 🌱 Juninho Dev          | Alcance o level 5                 | Level 5           |
+| 🎯 Foco Total           | Complete 10 desafios em sequência | 10 streak         |
+| 🦁 Programador Corajoso | Complete 5 desafios avançados     | 5 avançados       |
+| 🧠 Ninja dos Algoritmos | Complete todos os intermediários  | 15 intermediários |
+| 👑 Lenda do Código      | Complete todos os desafios        | 40 desafios       |
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-- **React 18** - Biblioteca JavaScript para construção de interfaces
-- **TypeScript** - Tipagem estática para JavaScript
-- **Vite** - Ferramenta de build rápida
-- **Tailwind CSS** - Framework de estilos utilitários
-- **LocalStorage** - Persistência de dados no navegador
+- **React 18** + TypeScript
+- **Vite** (build tool)
+- **Tailwind CSS** (estilos)
+- **Lucide React** (ícones)
+- **GitHub API** (integração)
 
 ---
 
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-- Node.js (versão 16 ou superior)
-- npm ou yarn
+## 🚀 Como Usar
 
 ### Instalação
 
-1. Clone o repositório:
 ```bash
-git clone https://github.com/taylorreis-lab/codechallenge-hub.git
-```
+# Clone o repositório
+git clone https://github.com/taylorreis-lab/codechallenger.git
 
-2. Acesse a pasta do projeto:
-```bash
-cd codechallenge-hub
-```
+# Entre na pasta
+cd codechallenger
 
-3. Instale as dependências:
-```bash
+# Instale as dependências
 npm install
-```
 
-4. Execute o projeto:
-```bash
+# Execute o projeto
 npm run dev
 ```
 
-5. Acesse no navegador:
-```
-http://localhost:5173
+### Uso
+
+1. **Selecione uma linguagem** na página inicial
+2. **Escolha um desafio** na barra lateral
+3. **Escreva seu código** no editor
+4. **Execute** para testar sua solução
+5. **Ganhe XP** ao completar desafios
+6. **Desbloqueie medalhas** conforme evolui
+
+### Navegação
+
+- **Navbar**: Acesse Ranking, Comunidade e Documentação
+- **Menu de Perfil**: Troque temas, idiomas e veja seu perfil
+- **Voltar**: Retorne para a tela anterior automaticamente
+
+---
+
+## 📁 Adicionando Novos Desafios
+
+### Estrutura Padrão
+
+Para adicionar um novo desafio, siga esta estrutura:
+
+```typescript
+{
+  id: 'js-nova-funcao',
+  title: 'Nova Função',
+  description: 'Descreva o que a função deve fazer',
+  difficulty: 'iniciante', // 'iniciante' | 'intermediario' | 'avancado'
+  category: 'Strings',
+  initialCode: 'function novaFuncao(param) {\n  // seu código aqui\n}',
+  solution: 'function novaFuncao(param) {\n  return resultado;\n}',
+  hints: ['Dica 1', 'Dica 2', 'Dica 3'],
+  documentation: {
+    concept: 'Explicação do conceito',
+    syntax: 'function nome(params) { return valor; }',
+    example: 'nome(arg) // retorna valor',
+    externalLink: 'https://developer.mozilla.org/...',
+    tips: ['Dica prática 1', 'Dica prática 2']
+  },
+  testCases: [
+    { id: 1, input: [valor], expected: resultado, description: 'Descrição do teste' }
+  ],
+  xpReward: 10
+}
 ```
 
-### Build para Produção
+### Regras
 
-```bash
-npm run build
+1. **ID único**: Use o formato `linguagem-nome` (ex: `js-soma`)
+2. **Dificuldade**: Use 'iniciante', 'intermediario' ou 'avancado'
+3. **Código inicial**: Forneça um template básico
+4. **Solução**: Para referência do usuário
+5. **Documentação**: Links para documentação oficial
+6. **Testes**: Mínimo 3 casos de teste
+
+---
+
+## 🌍 Adicionando Novas Linguagens
+
+### Estrutura de Arquivo
+
+Crie um arquivo em `src/data/[lingua].ts`:
+
+```typescript
+import { Challenge } from '../core/types';
+
+export const challenges: Challenge[] = [
+  // seus desafios aqui
+];
 ```
 
-Os arquivos compilados estarão na pasta `dist/`.
+### Registro
+
+Adicione no `src/data/index.ts`:
+
+```typescript
+import { languageChallenges } from './lingua';
+
+export const languages: Language[] = [
+  // linguagens existentes...
+  {
+    id: 'lingua',
+    name: 'Nome da Linguagem',
+    icon: '🏷️',
+    description: 'Descrição da linguagem',
+    docLink: 'https://docs.oficial.com',
+    color: '#HEXCOLOR',
+    fileExtension: '.ext',
+    prismLanguage: 'lingua',
+    challenges: challenges,
+  },
+];
+```
+
+### Linguagens Planejadas
+
+- ✅ JavaScript
+- ✅ C#
+- 🔜 Python
+- 🔜 Java
+- 🔜 Go
+- 🔜 Rust
 
 ---
 
@@ -123,106 +270,79 @@ Os arquivos compilados estarão na pasta `dist/`.
 
 **Taylor Reis**
 
-- GitHub: [github.com/taylorreis-lab](https://github.com/taylorreis-lab)
-- LinkedIn: [Taylor Reis](https://www.linkedin.com/in/taylorreis-dev)
+<div align="center">
 
----
+[![GitHub](https://img.shields.io/badge/GitHub-taylorreis--lab-24292e?style=for-the-badge&logo=github)](https://github.com/taylorreis-lab)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-taylorreis--dev-0077b5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/taylorreis-dev)
 
-## 🌍 Open Source e Contribuições
-
-### 📢 Projeto Open Source!
-
-O **CodeChallenge Hub** é um projeto open source e a comunidade é muito bem-vinda para contribuir! A ideia é que o projeto continue crescendo com a ajuda de todos os desenvolvedores.
-
-### 🤝 Como Contribuir
-
-Você pode contribuir de diversas maneiras:
-
-#### 1. Adicionar Novos Desafios
-- Crie desafios interessantes para os níveis existentes
-- Siga o padrão de documentação estabelecido
-- Inclua casos de teste relevantes
-
-#### 2. Corrigir Bugs
-- Encontrou algum problema? Abra uma issue ou envie um PR
-- Verifique as issues existentes antes de criar uma nova
-
-#### 3. Melhorar a Interface
-- Proponha melhorias no design
-- Adicione novas funcionalidades
-- Melhore a experiência do usuário
-
-#### 4. Adicionar Novas Linguagens 🔮
-
-**Em Breve!** O projeto será expandido para incluir outras linguagens de programação:
-
-- **C#** - Desafios de programação orientada a objetos, .NET, ASP.NET
-- **Python** - Desafios de ciência de dados, automação, web
-- **Java** - Desafios de POO, estrutura de dados
-- **Go** - Desafios de concorrência e performance
-- **Rust** - Desafios de sistemas e segurança
-- **E muito mais!**
-
-Se você tem experiência em alguma dessas linguagens e quer ajudar a criar desafios, entre em contato!
-
-#### 5. Traduzir o Projeto
-- Traduza a interface para outros idiomas
-- Traduza a documentação dos desafios
-
-#### 6. Melhorar a Documentação
-- Aprimore as explicações dos desafios
-- Adicione mais exemplos
-- Corrija erros de digitação ou gramática
-
-> ℹ️ **Nota do autor:** Atualmente, sou o principal responsável por continuar o projeto. Caso alguém queira contribuir, podemos tocar juntos – basta abrir uma issue ou entrar em contato.
-
-### 📝 Guia de Contribuição
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-### 🎯 Roadmap Futuro
-
-- [ ] Adicionar desafios de C#
-- [ ] Adicionar desafios de Python
-- [ ] Sistema de login e perfil do usuário
-- [ ] Ranking global de usuários
-- [ ] Desafios semanais
-- [ ] Fóruns de discussão
-- [ ] Tutoriais em vídeo
-- [ ] Certificados de conclusão
-- [ ] Versão mobile
-- [ ] API REST para integrações
+</div>
 
 ---
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+MIT License - Copyright (c) 2025 Taylor Reis
 
 ---
 
-## 💬 Comunidade
+## 🤝 Contribuições
 
-- **Issues**: Para reportar bugs ou sugerir features
-- **Discussions**: Para discussões gerais sobre o projeto
-- **Pull Requests**: Para contribuir com código
+Este é um projeto **Open Source**! Contribuições são bem-vindas.
+
+### Como Contribuir
+
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
+### Áreas para Contribuir
+
+- Novos desafios (JavaScript, C#, Python, etc.)
+- Novas linguagens
+- Melhorias de UI/UX
+- Documentação
+- Correção de bugs
 
 ---
 
-## 🙏 Agradecimentos
+## 📊 Roadmap
 
-A todos os desenvolvedores que contribuíram e contribuirão para este projeto. Juntos podemos criar uma plataforma cada vez melhor para a comunidade de desenvolvedores.
+### Versão 1.0 (Atual)
+
+- ✅ JavaScript (40 desafios)
+- ✅ C# (10 desafios)
+- ✅ Sistema de temas
+- ✅ Integração GitHub
+- ✅ Sistema de entregas
+- ✅ Ranking
+- ✅ Comunidade (Coming Soon)
+
+### Versão 1.1
+
+- [ ] Python (20 desafios)
+- [ ] Sistema de login
+- [ ] Perfil público
+
+### Versão 2.0
+
+- [ ] Java (20 desafios)
+- [ ] Go (20 desafios)
+- [ ] Rust (20 desafios)
+- [ ] Modo competição
+- [ ] Equipes
 
 ---
 
-> **"Tudo pode começar e continuar crescendo"**
->
-> *— Lema do CodeChallenge Hub*
+**"Tudo pode começar e continuar crescendo"** 🌱
 
 ---
 
-⭐ **Se este projeto ajudou você, deixe uma estrela no GitHub!**
+<div align="center">
+
+**© 2026 CodeChallenger** - Todos os direitos reservados
+
+Feito com ❤️ por Taylor Reis
+
+</div>
