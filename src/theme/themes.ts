@@ -20,8 +20,8 @@ export const THEMES: ThemeConfig[] = [
         string: '#032f62',
         comment: '#6a737d',
         number: '#005cc5',
-      }
-    }
+      },
+    },
   },
   {
     id: 'dark',
@@ -42,8 +42,8 @@ export const THEMES: ThemeConfig[] = [
         string: '#f1fa8c',
         comment: '#6272a4',
         number: '#bd93f9',
-      }
-    }
+      },
+    },
   },
   {
     id: 'nord',
@@ -64,8 +64,8 @@ export const THEMES: ThemeConfig[] = [
         string: '#a3be8c',
         comment: '#4c566a',
         number: '#b48ead',
-      }
-    }
+      },
+    },
   },
   {
     id: 'tokyo-night',
@@ -86,8 +86,8 @@ export const THEMES: ThemeConfig[] = [
         string: '#9ece6a',
         comment: '#565f89',
         number: '#ff9e64',
-      }
-    }
+      },
+    },
   },
   {
     id: 'synthwave',
@@ -108,8 +108,8 @@ export const THEMES: ThemeConfig[] = [
         string: '#ff7edb',
         comment: '#848bb2',
         number: '#fdec5d',
-      }
-    }
+      },
+    },
   },
   {
     id: 'monokai',
@@ -130,12 +130,14 @@ export const THEMES: ThemeConfig[] = [
         string: '#ffd866',
         comment: '#727072',
         number: '#ab9df2',
-      }
-    }
-  }
+      },
+    },
+  },
 ];
 
 export const getRandomTheme = (currentThemeId: string) => {
-  const filteredThemes = THEMES.filter(t => t.id !== currentThemeId && t.id !== 'light' && t.id !== 'dark');
+  const filteredThemes = THEMES.filter(
+    (t) => t.id !== currentThemeId && t.id !== 'light' && t.id !== 'dark'
+  );
   return filteredThemes[Math.floor(Math.random() * filteredThemes.length)];
 };

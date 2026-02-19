@@ -16,19 +16,9 @@ const languages = [
   { code: 'ja-JP', label: '日本語', flag: '🇯🇵' },
 ];
 
-export function LanguageModal({
-  isOpen,
-  onClose,
-  currentLanguage,
-  onLanguageChange,
-}: LanguageModalProps) {
+export function LanguageModal({ isOpen, onClose, currentLanguage, onLanguageChange }: LanguageModalProps) {
   return (
-    <Modal
-      isOpen={isOpen}
-      onClose={onClose}
-      title="Selecionar Idioma"
-      size="md"
-    >
+    <Modal isOpen={isOpen} onClose={onClose} title="Selecionar Idioma" size="md">
       <div className="space-y-2">
         {languages.map((lang) => (
           <button
@@ -46,18 +36,8 @@ export function LanguageModal({
             <span className="text-2xl">{lang.flag}</span>
             <span className="font-medium">{lang.label}</span>
             {currentLanguage === lang.code && (
-              <svg
-                className="w-5 h-5 ml-auto"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
+              <svg className="w-5 h-5 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             )}
           </button>
@@ -65,7 +45,7 @@ export function LanguageModal({
       </div>
       <div className="mt-4 p-3 bg-blue-50 rounded-xl border border-blue-200">
         <p className="text-sm text-blue-600">
-          💡 <strong>Dica:</strong> Atualmente apenas Português está disponível.
+          💡 <strong>Dica:</strong> Atualmente apenas Português está disponível. 
           Contribua para traduzir para outros idiomas!
         </p>
       </div>

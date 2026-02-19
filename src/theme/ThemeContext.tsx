@@ -11,7 +11,9 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [themeType, setThemeTypeState] = useState<ThemeType>(() => {
     return (localStorage.getItem('theme-type') as ThemeType) || 'dark';
   });
@@ -20,7 +22,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (themeType === 'random') {
       return getRandomTheme('none');
     }
-    return THEMES.find(t => t.id === themeType) || THEMES[1]; // default dark
+    return THEMES.find((t) => t.id === themeType) || THEMES[1]; // default dark
   });
 
   useEffect(() => {
@@ -28,7 +30,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (themeType === 'random') {
       setCurrentTheme(getRandomTheme('none'));
     } else {
-      const theme = THEMES.find(t => t.id === themeType);
+      const theme = THEMES.find((t) => t.id === themeType);
       if (theme) setCurrentTheme(theme);
     }
   }, [themeType]);
@@ -42,12 +44,14 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   return (
-    <ThemeContext.Provider value={{ theme: currentTheme, themeType, setThemeType, cycleRandomTheme }}>
-      <div 
-        style={{ 
-          backgroundColor: currentTheme.colors.bg, 
+    <ThemeContext.Provider
+      value={{ theme: currentTheme, themeType, setThemeType, cycleRandomTheme }}
+    >
+      <div
+        style={{
+          backgroundColor: currentTheme.colors.bg,
           color: currentTheme.colors.text,
-          transition: 'all 0.3s ease'
+          transition: 'all 0.3s ease',
         }}
         className="min-h-screen"
       >
