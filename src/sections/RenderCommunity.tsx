@@ -19,7 +19,7 @@ export const RenderCommunity: React.FC<RenderCommunityProps> = ({ onNavigate, pr
   // Posts mockados
   const posts = [
     {
-      id: 1,
+      id: 1, 
       author: 'CodeNinja',
       avatar: '🥷',
       time: '2 horas',
