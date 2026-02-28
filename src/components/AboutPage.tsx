@@ -9,14 +9,14 @@ export function AboutPage({ userName }: AboutPageProps) {
     <div className="max-w-4xl mx-auto space-y-8">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-slate-800 mb-4">Sobre o Projeto</h1>
+        <h1 className="text-4xl font-bold text-slate-300 mb-4">Sobre o Projeto</h1>
         <p className="text-slate-600">Conheça o CodeChallenger e seu propósito</p>
       </div>
 
       {/* Objective */}
-      <Card className="p-8">
-        <h3 className="text-xl font-semibold text-slate-800 mb-4">🎯 Objetivo</h3>
-        <p className="text-slate-600 leading-relaxed mb-6">
+      <Card className="p-8 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <h3 className="text-xl font-semibold text-slate-300 mb-4">🎯 Objetivo</h3>
+        <p className="text-slate-300 leading-relaxed mb-6">
           O <strong>CodeChallenger</strong> foi desenvolvido com o intuito de ajudar desenvolvedores a 
           <strong> relembrar e praticar funções e métodos de diversas linguagens de programação</strong>. 
           Seja você um iniciante querendo solidificar seus conhecimentos ou um desenvolvedor 
@@ -24,7 +24,7 @@ export function AboutPage({ userName }: AboutPageProps) {
           desafios práticos organizados por nível de dificuldade.
         </p>
         
-        <p className="text-slate-600 leading-relaxed">
+        <p className="text-slate-300 leading-relaxed mb-6">
           Cada desafio vem acompanhado de <strong>documentação detalhada</strong> que explica os conceitos 
           envolvidos, mostra a sintaxe correta, fornece exemplos práticos e lista métodos relacionados. 
           É como ter uma referência rápida sempre à mão!
@@ -32,36 +32,36 @@ export function AboutPage({ userName }: AboutPageProps) {
       </Card>
 
       {/* What You'll Learn */}
-      <Card className="p-8">
-        <h3 className="text-xl font-semibold text-slate-800 mb-6">📚 O que você vai aprender</h3>
+      <Card className="p-8 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <h3 className="text-xl font-semibold text-slate-300 mb-6">📚 O que você vai aprender</h3>
         <div className="grid md:grid-cols-2 gap-4">
-          <div className="bg-slate-50 p-4 rounded-lg">
-            <h4 className="font-medium text-slate-800 mb-2">JavaScript</h4>
-            <p className="text-sm text-slate-600">map, filter, reduce, async/await, closures, callbacks e muito mais...</p>
+          <div className="bg-slate-600 p-4 rounded-lg">
+            <h4 className="font-medium text-slate-300 mb-2">JavaScript</h4>
+            <p className="text-sm text-slate-300">map, filter, reduce, async/await, closures, callbacks e muito mais...</p>
           </div>
-          <div className="bg-slate-50 p-4 rounded-lg">
-            <h4 className="font-medium text-slate-800 mb-2">C# / .NET</h4>
-            <p className="text-sm text-slate-600">LINQ, delegates, async, properties, generics e mais...</p>
+          <div className="bg-slate-600 p-4 rounded-lg">
+            <h4 className="font-medium text-slate-300 mb-2">C# / .NET</h4>
+            <p className="text-sm text-slate-300">LINQ, delegates, async, properties, generics e mais...</p>
           </div>
-          <div className="bg-slate-50 p-4 rounded-lg">
-            <h4 className="font-medium text-slate-800 mb-2">Python</h4>
-            <p className="text-sm text-slate-600">list comprehensions, generators, decorators e mais...</p>
+          <div className="bg-slate-600 p-4 rounded-lg">
+            <h4 className="font-medium text-slate-300 mb-2">Python</h4>
+            <p className="text-sm text-slate-300">list comprehensions, generators, decorators e mais...</p>
           </div>
-          <div className="bg-slate-50 p-4 rounded-lg">
-            <h4 className="font-medium text-slate-800 mb-2">E mais!</h4>
-            <p className="text-sm text-slate-600">Java, Go, Rust e outras linguagens em breve...</p>
+          <div className="bg-slate-600 p-4 rounded-lg">
+            <h4 className="font-medium text-slate-300 mb-2">E mais!</h4>
+            <p className="text-sm text-slate-300">Java, Go, Rust e outras linguagens em breve...</p>
           </div>
         </div>
       </Card>
 
       {/* Badge System */}
-      <Card className="p-8">
-        <h3 className="text-xl font-semibold text-slate-800 mb-4">🏆 Sistema de Medalhas</h3>
-        <p className="text-slate-600 leading-relaxed mb-4">
+      <Card className="p-8 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <h3 className="text-xl font-semibold text-slate-300 mb-4">🏆 Sistema de Medalhas</h3>
+        <p className="text-slate-300 leading-relaxed mb-4">
           Para tornar a experiência mais divertida e motivadora, implementamos um sistema de medalhas. 
           Conforme você avança nos desafios, vai desbloqueando conquistas:
         </p>
-        <ul className="list-disc list-inside text-slate-600 space-y-2">
+        <ul className="list-disc list-inside text-slate-300 space-y-2">
           <li><strong>🐣 Primeiros Passos</strong> - Complete seu primeiro desafio</li>
           <li><strong>🌱 Juninho Dev</strong> - Alcance o nível intermediário</li>
           <li><strong>🦁 Programador Corajoso</strong> - Enfrente desafios avançados</li>
@@ -70,9 +70,9 @@ export function AboutPage({ userName }: AboutPageProps) {
       </Card>
 
       {/* Progress Saved */}
-      <Card className="p-8">
-        <h3 className="text-xl font-semibold text-slate-800 mb-4">💾 Progresso Salvo</h3>
-        <p className="text-slate-600 leading-relaxed">
+      <Card className="p-8 bg-gradient-to-r from-slate-800 to-slate-900 text-white">
+        <h3 className="text-xl font-semibold text-slate-300 mb-4">💾 Progresso Salvo</h3>
+        <p className="text-slate-300 leading-relaxed mb-6">
           Seu progresso é automaticamente salvo no navegador. Você pode fechar a página e voltar 
           depois - todos os desafios completados e medalhas conquistadas estarão lá esperando por você!
         </p>
@@ -104,13 +104,13 @@ export function AboutPage({ userName }: AboutPageProps) {
 
       {/* Creator */}
       <Card className="p-8 text-center bg-slate-800 text-white">
-        <h3 className="text-xl font-semibold mb-4">👨‍💻 Criador</h3>
+        <h3 className="text-xl font-semibold mb-4">👨‍💻 Criador e desenvolvedor</h3>
         <div className="mb-4">
           <div className="w-20 h-20 bg-slate-700 rounded-full mx-auto flex items-center justify-center text-3xl mb-3">
             👋
           </div>
           <h4 className="text-2xl font-bold">Taylor Reis</h4>
-          <p className="text-slate-400 text-sm mt-1">@{userName}</p>
+          <p className="text-slate-400 text-sm mt-1">@Taylorreis-lab</p>
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a 
