@@ -59,6 +59,11 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 
 ---
 
+## [Em momento de desenvolvimento]
+
+- [ ] Fixed homes
+- [ ] Add mais desafios JS, e C-Sharp
+
 ## [Próximas Versões]
 
 ### Versão 1.1 (Planejada)
